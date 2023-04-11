@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif
+}
+#header {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#header .menu-header{
+    position: relative;
+}
+#header .menu-more{
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-header > li > a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 24px;
+}
+.menu-header>li{
+    display: inline-block;
+    line-height: 46px;
+    position: relative;
+}
+.menu-header >li:hover {
+    background-color: #ccc;
+}
+.menu-more li  {
+    list-style: none;
+    min-width: 160px;
+    padding: 0 16px;
+}
+.menu-more li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+.menu-header >li:hover >a{
+    color: #000;
+}
+.menu-more li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+#header li:hover .menu-more{
+    display: block;
+}
+#header .menu-header{
+    display: inline-block;
+}
+#header .search-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 16px ;
+    cursor: pointer;
+}
+#header .search-btn:hover{
+    background-color: red;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+}
+
+#slider {
+    position: relative;
+    background-color: #333;
+    margin-top: 46px;
+    padding-top: 50%;
+    background : url('/w3_band/assets/img/slider/ny.jpg') top center / cover no-repeat;
+}
+
+ #slider .text-slider{
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+#slider .text-heading{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+#slider .text-content{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#content .text-about{
+    width: 800px;
+    
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 100;
+}
+#content .section-slogan{
+
+}
+#content .main-text{
+
+}
+#footer {
+
+}

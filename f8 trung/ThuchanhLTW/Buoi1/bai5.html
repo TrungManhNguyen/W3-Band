@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function thuchien() {
+    var chuoi = document.getElementById("chuoi").value;
+    if (chuoi == "") {
+        alert("hãy nhập nội dung vào chuỗi.");
+        document.getElementById("chuoi").focus();
+    }
+    var array = chuoi.split(",");
+    var select = document.getElementById("danhsach");
+    var length = select.options.length;
+    for (i = 0; i < length; i++) {
+        select.remove(select.options[0]);
+    }
+    array.forEach(function (op) {
+        op = op.trim();
+        if (op != "") {
+            var option = document.createElement("option");
+            option.text = op;
+            select.add(option);
+        }
+    }, this);
+}
+function change() {
+    var selectBox = document.getElementById("danhsach");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    alert("Bạn đã chọn mục: " + selectedValue);
+}
+function huy() {
+    document.getElementById("chuoi").value = "";
+}
+
+// function trimSpace(str) {
+//     return str.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g, "").replace(/\s+/g, " ");
+// }
+    </script>
+</head>
+<body>
+    <section>
+        <span>Chuỗi: </span>
+        <input type="text" name="txtChuoi" id="chuoi">
+        <br>
+        <br>
+        <span>Danh sách: </span>
+        <select name="ddlDanhsach" id="danhsach" onchange="change()">
+        </select>
+        <br>
+        <br>
+        <button class="btn" onclick="huy()">Huỷ</button> &nbsp; &nbsp;
+        <button class="btn" onclick="thuchien()">Thực hiện</button>
+
+    </section>
+</body>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    line-height: 25px;
+}
+section{
+    width: 400px;
+    margin: 150px auto;
+    padding: 30px;
+    border: 1px solid black;
+}
+#chuoi{
+    width: 300px;
+    height: 25px;
+    float: right;
+    border: 1px solid black;
+}
+#danhsach{
+    width: 302px;
+    height: 27px;
+    float: right;
+    border: 1px solid black;
+}
+.btn{
+    padding: 3px;
+    margin-right: 40px;
+    float: right;
+}
+</style>
+</html>

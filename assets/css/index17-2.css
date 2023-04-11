@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    height: 46px;
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#menu .subnav {
+    position: absolute;
+}
+.nav .subnav {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.nav .subnav li{
+    list-style: none;
+}
+.subnav li a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    min-width: 160px;
+    padding: 0 12px;
+    font-size: 16px;
+}
+
+#menu >.nav >li {
+    display: inline-block;
+    line-height: 46px;
+    position: relative;
+}
+.nav>li>a{
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+#menu .nav{
+    display: inline-block;
+}
+.nav li:hover .subnav{
+    display: block;
+}
+.subnav li:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+.nav >li:hover >a{
+    background-color: #ccc;
+    color: #000;
+}
+#menu .search-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 24px;
+}
+.kinh-lup{
+    color: #fff;
+    line-height: 46px;
+}
+#menu .search-btn:hover{
+    background-color: red;
+}
+#slider{
+    height: 1000px;
+    padding-top: 50%;
+    background:url(/w3_band/assets/img/slider/ny.jpg) top center/ cover no-repeat;
+}

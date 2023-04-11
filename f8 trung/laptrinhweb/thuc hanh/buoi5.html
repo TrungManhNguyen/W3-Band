@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+            function tinh(){
+                a=document.getElementById("so1").value;
+                b=document.getElementById("so2").value;
+                var sum=parseInt(a)+parseInt(b);
+                c=document.getElementById("loigt1");
+                d=document.getElementById("loigt2");
+                document.getElementById("ketqua").innerHTML=sum;
+                if(a==""){
+                    c.innerHTML=("chua nhap")
+                }
+                else {
+                    c.innerHTML="ok";
+                }
+                    if(b==""){
+                    d.innerHTML=("chua nhap")
+                }
+                else {
+                    d.innerHTML="ok";
+                }
+
+            }
+            function doianh(){
+                den=document.getElementById("den");
+                src=den.getAttribute("src");
+                if(src="./img/dentat.png"){
+                    den.setAttribute("src","./img/denbat.png")
+                }
+                else 
+                {
+                    den.setAttribute("src","./img/dentat.png")
+                }
+            }
+    </script>
+</head>
+<body>
+        <form method="POST" action="">
+            <h1>Kết quả là :</h1>
+            Số 1<input name="so1" id="so1" value=""><br>
+            <p id="loigt1"></p>
+            Số 2<input name="so2" id="so2" value=""><br>
+            <p id="loigt2"></p>
+            <input type="button" name="tinhtong"  onclick="tinh()" id="tinhtong" value="Tính tổng"><br>
+            <div id="ketqua">Tổng của 2 số là :</div>
+            <img src="./img/dentat.png" onclick="doianh()" alt="false" id="den">
+            
+
+        </form>
+</body>
+</html>

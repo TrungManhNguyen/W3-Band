@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul class="header">
+                <li class="trangchu">Trang chủ >></li>
+                <li class="trangchu">Thời trang >></li>
+                <li id="belike">Áo thun nữ Belike</li>
+            </ul>
+        </div>
+        <div id="main">
+           <section id="anh">
+                <img id="anh-goc" src="ao-belike1_master.jpg" alt="Lỗi">
+           </section>
+           <section id="mota">
+                <h2>Áo thun nữ Belike</h2>
+                <ul class="gia">
+                    <li id="gia-sale">95,200đ</li>
+                    <li id="gia-goc"><del>200,000đ</del></li>
+                    <li id="ma-sp">Mã SP:</li>
+                </ul>
+                <p id="mieuta">Trẻ trung cuốn hút theo phong cách đường phố thu đông với áo nỉ thêu hình động vật của thương hiệu Asos.-Chất liệu coton pha-cổ 3cm-tay dài,suông,không lót trong-màu sắc:xám .hướng dẫn sử dụng:-giặt bằng tay với nhiệt độ không quá 30'C -Không được tẩy - không được sấy khô - ủi với nhiệt độ ....</p>
+            <ul class="soluong">
+                <li>Số lượng </li>
+                <li class="so1">1</li>
+            </ul>
+            <input  type="button" id="them" value="THÊM GIỎ HÀNG">
+            <input type="button"  id="mua-ngay" value="$ MUA NGAY">
+           </section>
+        </div>
+    </div>
+</body>
+<style>
+    #anh-phu{
+        width: 20%
+    }
+    input
+    {
+        width: 200px;
+        height: 50px;
+        margin-right: 30px;
+    }
+    #them{
+        background-color: rgb(65, 62, 62);
+        color: #fff;
+    }
+    .so1{
+        border: 1px solid;
+        width: 100px;
+        margin-left: 40px;
+        padding-left: 20px;
+    }
+    .soluong li{
+        color: rgba(107, 104, 104, 0.863);
+        display: inline-block;
+        margin-bottom: 60px;
+    }
+    .header{
+        margin: 20px;
+    }
+    h2{
+        margin-bottom: 40px;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .gia{
+        margin-bottom: 40px;
+    }
+    #ma-sp{
+        font-size: 14px;
+        padding-left: 15px;
+        font-size: 22px;
+    }
+    #gia-goc{
+        color: #ccc;
+        padding-left: 15px;
+        font-size: 26px;
+    }
+    #mieuta{
+        text-align: justify;
+        line-height: 26px;
+        width: 80%;
+        color: rgba(107, 104, 104, 0.863);
+        margin-bottom: 40px;
+    }
+    .gia li{
+        display: inline-block;
+    }
+    #gia-sale{
+        color: rgb(0, 153, 255);
+        font-size: 44px;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 200;
+    }
+    .header li{
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #belike{
+        color: black !important;
+    }
+    html{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .trangchu{
+        opacity: 0.4;
+    }
+    img{
+        width: 80%;
+        grid-area: image;
+    }
+    #mota{
+        grid-area: main;
+    }
+    #header{
+        grid-area: header;
+    }
+    #anh{
+        grid-area: about;
+    }
+    #main{
+        display: grid;
+        grid-template-areas: 
+        'header header'
+        'image main'
+        'about main' ;
+    }
+
+</style>
+</html>

@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    height: 100px;
+    background-color:rgb(255, 72, 0);
+    line-height:  46px;
+    color:#fff;
+}
+h1{
+    padding: 10px 20px;
+}
+#anh{
+    padding-bottom: 150px;
+}
+img{
+    border: 10px solid rgb(66, 142, 204);
+}
+
+#menu{
+    padding: 0 20px;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-bottom: 180px;
+}
+
+.sidebar{
+    color: #fff;
+    width: 300px;
+    background-color: rgb(66, 142, 204);
+    display: inline-block;
+    padding: 10px;
+}
+.sidebar:hover{
+    background-color:rgb(62, 62, 204);
+}
+.ct{
+    color: orangered;
+    text-align: right;
+    padding: 10px 0 0 0;
+}
+#chuyengia h3,
+#truongnhom h3,
+#laptrinhvien h3{
+    color: rgb(62, 62, 204);
+    padding: 10px;
+}
+#chuyengia p,
+#laptrinhvien p,
+#truongnhom p {
+    font-size: small;
+}
+#truongnhom h3:hover,
+#chuyengia h3:hover,
+#laptrinhvien h3:hover{
+    color: rosybrown;
+    cursor: pointer;
+}
+.ct:hover{
+    color: royalblue;
+    cursor: pointer;
+}
+#cohoi {
+    padding-bottom: 20px;
+    color: orangered;
+}
+
+#maincontent{
+    padding: 50px;
+   margin-bottom: 100px;
+}
+
+#footer {
+    height: 50px;
+   background-color: rgb(0, 153, 255);
+}
+#footer p {
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+}    
+@media screen and (max-width:767px){
+    #header{
+        float: left;
+        width: 100%;
+    }
+    #menu{
+        float: left;
+        width: 100%;
+    }
+    #maincontent{
+        float: left;
+        display: none;
+    }
+}

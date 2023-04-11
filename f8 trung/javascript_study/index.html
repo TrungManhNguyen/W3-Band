@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tachchuoi(){
+          var chuoids=document.getElementById("ip1").value;
+          var tachchuoi=chuoids.split(",");
+          var length = tachchuoi.length;
+          var loi=document.getElementById("loi1")
+          //console.log(tach);
+          //console.log(length);
+          var select = document.getElementById('slc');
+          if(chuoids!=""){
+          for (var i = 1; i<=length; i++){  
+            var tachchuoi=chuoids.split(",",i);  
+            var op = document.createElement('option');
+            op.value = i;
+            op.innerHTML = tachchuoi.slice(-1);//chuoi.split(",",i);
+            select.appendChild(op);
+            loi.innerHTML="OK";
+          }
+        }
+          else
+          { 
+          
+              loi.innerHTML="Thiếu dữ liệu";
+              document.getElementById("ip1").focus();
+              var  a = slc.options.length ;
+              console.log(a);
+              for (var i = a; i >= 0; i--){  
+               select.remove(i);
+           }  
+           
+          }
+}
+
+    </script>
+    <style>
+      #di{
+        border-color: black;
+        border-style: solid;
+        border-width: 2px; 
+        width: 400px;
+        height: 200px;
+        padding-top: 50px;
+        
+      }
+      #loi1{
+        color: rgb(247, 23, 23);
+      }
+      select{
+        width: 100px;
+      }
+
+
+      input{
+        margin-left: 30px;
+      }
+
+    </style>
+</head>
+<body>
+  <div id="di" >
+    <form action="" method="post">
+    
+      <label>Chuỗi:  </label>
+      <input name="ip1"type="text" value="" id="ip1"><span id="loi1"></span>
+      <br>
+      <br>
+      <label>Danh sách:</label>
+      <select name="slc" id="slc">    
+      </select>
+      <br>
+      <br>
+       <input  type="button" value="Thực hiện" onclick="tachchuoi()">
+      
+       <input type="reset" value="xóa" > 
+</form>
+</div>
+</body>
+</html>

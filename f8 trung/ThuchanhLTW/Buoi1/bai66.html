@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function xemngay(){
+        var ngay = new Date(document.getElementById('ngaysinh').value);
+        var day=ngay.getDate();
+        var month=ngay.getMonth()+1;
+        var cung=document.getElementById('cung');
+        cung.value=xemcung(day,month);
+    }
+    function xemcung(day,month){
+        switch(month)
+        {
+            case 1:
+                if(day<= 19)
+                    return 'Ma Kết';
+                else
+                    return 'Bảo Bình';
+            case 2:
+                if(day<=18)
+                    return 'Bảo Bình';
+                else
+                    return 'Song Ngư';
+            case 3:
+                if(day<=20)        
+                    return 'Song Ngư';
+                else 
+                    return 'Bạch Dương';
+            case 4:
+                if(day<=20)
+                    return 'Bạch Dương';
+                else 
+                    return 'Kim Ngưu';
+            case 5:
+                if(day<=20) 
+                    return 'Kim Ngưu';
+                else
+                    return 'Song Tử';
+            case 6:
+                if(day<=22)
+                    return 'Song Tử';
+                else
+                    return 'Cự Giải';
+            case 7:
+                if(day<=22)
+                    return 'Cự Giải';
+                else
+                    return 'Sư Tử';
+            case 8:
+                if(day<=22)
+                    return 'Sư tử';
+                else
+                    return 'Xử Nữ';
+            case 9:
+                if(day<=22)
+                    return "Xử nữ"
+                else
+                    return 'Thiên Bình'    
+            case 10:
+                if(day<=23)
+                    return 'Thiên Bình'
+                else
+                    return 'Bọ Cạp'
+            case 11:
+                if(day<=22)
+                    return 'Bọ Cạp'
+                else 
+                    return 'Nhân Mã';
+            case 12:
+                if(day<=21)
+                    return 'Nhân Mã'
+                else 
+                    return 'Ma Kết'
+            default:
+                alert("Yêu cầu nhập ngày tháng năm sinh");
+                document.getElementById('ngaysinh').focus();
+                return 'Chưa nhập dữ liệu';
+        }
+    }
+</script>
+<body>
+    <form>
+        <span>Ngày sinh</span>
+        <input type="date" id="ngaysinh" name="txtNgaySinh" >
+        <br>
+        <br>
+        <span>Cung</span>
+        <input name="txtCung" id="cung" disabled onchange="change()">
+        
+        <br>
+        <br>
+        <input onclick="xemngay()" type="button" name="btn" id="xem" value="Xem">
+        <input type="reset" name="reset" id="reset" value="Xoá">
+    </form>
+</body>
+<style>
+    form{
+        width: 300px;
+      border: 1px solid black;
+    }
+    #ngaysinh{
+        margin-top: 20px;
+    }
+    #cung{
+        width: 140px;
+        margin-left: 28px;
+    }
+    #xem{
+        margin-left: 120px;
+    }
+    #reset{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+</html>

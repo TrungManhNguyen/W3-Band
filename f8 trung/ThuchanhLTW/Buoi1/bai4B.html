@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai4B.css">
+</head>
+<body>
+
+
+
+    <div id="main">
+        <div class="container">
+            <div id="header">
+                <h1 id="book">BOOKS ONLINE</h1>
+            </div>
+            <div id="menu">
+                      <nav>
+                            <ul class="sidebar">
+                                <li>
+                                    <a href="#">SÁCH GIÁO KHOA</a>
+                                    <ul class="lopsgk">
+                                        <li><a href="#">Lớp 6</a></li>
+                                        <li><a href="#">Lớp 7</a></li>
+                                        <li><a href="#">Lớp 8</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">SÁCH THAM KHẢO</a>
+                                    <ul class="lopstk">
+                                        <li><a href="#">Lớp 6</a></li>
+                                        <li><a href="#">Lớp 7</a></li>
+                                        <li><a href="#">Lớp 8</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">TẠP CHÍ CHUYÊN NGÀNH</a>
+                                    <ul class="loptc">
+                                        <li><a href="#">Lớp 6</a></li>
+                                        <li><a href="#">Lớp 7</a></li>
+                                        <li><a href="#">Lớp 8</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">TRUYỆN THIẾU NHI</a>
+                                    <ul class="lopttn">
+                                        <li><a href="#">Lớp 6</a></li>
+                                        <li><a href="#">Lớp 7</a></li>
+                                        <li><a href="#">Lớp 8</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                      </nav>
+            </div>          
+             <div id="wrapper">
+                    <div id="search">
+                        <form>
+                            <p>Tìm kiếm</p>
+                            <input type="text" name="timkiem" placeholder="TÌm kiếm">
+                            <input type="button" name="" id="" value="Tìm">
+                        </form>
+                    </div>
+                    <div id="anh">
+                        <div class="image">
+                            <p>Toán</p>
+                            <img src="tải xuống.jfif" alt="">
+                        </div>
+                        <div class="image">
+                            <p>Toán</p>
+                            <img src="tải xuống.jfif" alt="">
+                        </div>
+                        <div class="image">
+                            <p>Toán</p>
+                            <img src="tải xuống.jfif" alt="">
+                        </div>
+                        <div class="image">
+                            <p>Toán</p>
+                            <img src="tải xuống.jfif" alt="">
+                        </div>
+                        <div class="image">
+                            <p>Toán</p>
+                            <img src="tải xuống.jfif" alt="">
+                        </div>
+                        <div class="image">
+                            <p>Toán</p>
+                            <img src="tải xuống.jfif" alt="">
+                        </div>
+                        <div class="image">
+                            <p>Toán</p>
+                            <img src="tải xuống.jfif" alt="">
+                        </div>
+                        <div class="image">
+                            <p>Toán</p>
+                            <img src="tải xuống.jfif" alt="">
+                        </div>
+                    </div>
+            </div>  
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+    <style>
+        .container{
+            width: 100%;
+        }
+        #wrapper{
+            display: flex;
+            width: 100%;
+        }
+        #search{
+            width: 25%;
+        }
+        .image{
+            width: 20%;
+            background-color: #000;
+            border-style: solid;
+            border-width: 2px;
+            float: left;
+            margin: 10px;
+        }
+        img{
+            width: 90%;
+        }
+        @media(max-width:768px){
+           #menu{
+               flex-direction: column;
+               width: 100%!important;
+           } 
+        .sidebar >li{
+            width: 100% !important;
+            margin-right: 50px !important;
+        }
+        li:hover{
+            width: 100%;
+        }
+        
+        
+    </style>
+</body>
+</html>

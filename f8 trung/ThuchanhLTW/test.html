@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Bai4</title>
+</head>
+<body>
+
+        <header class="header">
+            <h1>BOOK ONLINE</h1>
+        </header>
+        <div class="bocuc">
+        <div class="menu">
+            <nav>
+            <ul class="mn" >
+                <li ><a href="#">SÁCH GIÁO KHOA</a>
+                <ul class="m1">
+                    <li ><a href="#">Lớp 6</a></li>
+                    <li ><a href="#">Lớp 7</a></li>
+                    <li ><a href="#">Lớp 8</a></li>
+                </ul>
+                </li>
+                <li ><a href="#">SÁCH THAM KHẢO</a></li>
+                <li ><a href="#">TẠP CHÍ CHUYÊN NGÀNH</a></li>
+                <li ><a href="#">TRUYỆN THIẾU NHI</a></li>
+            </ul>
+           </nav>
+        </div>
+        <div class="noidung">
+            <div class="timkiem">
+                <form>
+               <p>Tìm kiếm:</p>
+               <input name="timkiem" placeholder="Tìm kiếm" type="text" >
+               <input type="button"  value="Tìm">
+               </form>
+            </div> 
+            <div class="content">
+                <div class="anh">
+                    <p>Toán 9</p><img src="54038.png" >
+                </div>
+                <div class="anh"><p>Toán 9</p>
+                    <img src="54038.png" ></div>
+                <div class="anh"><p>Toán 9</p>
+                    <img src="54038.png" ></div>
+                <div class="anh"><p>Toán 9</p>
+                    <img src="54038.png" ></div>
+                <div class="anh"><p>Toán 9</p>
+                    <img src="54038.png" ></div>
+                <div class="anh"><p>Toán 9</p>
+                    <img src="54038.png" ></div>
+                <div class="anh"><p>Toán 9</p>
+                    <img src="54038.png" ></div>
+                <div class="anh"><p>Toán 9</p>
+                    <img src="54038.png" ></div>
+
+            </div>   
+
+        </div>
+        <div class="footer">
+            <p>Design by </p>
+        </div>
+    </div>
+    <style>
+      @media(max-width:768px){
+    .bocuc{
+        flex-direction: column;
+        width: 100% !important;
+    }
+    .mn>li{
+        width: 100% !important;
+        margin-right: 50px !important;
+       
+    }
+    li:hover{
+        width: 100% !important;
+        
+    }
+    .m1 li{
+        width: 100% !important;
+    }
+    .m1{
+        width: 100% !important;
+        background-color:rgba(243, 243, 252,0.9) !important;
+        padding-bottom: 2px;
+        z-index:1
+       
+        
+    }
+    /*.timkiem form{
+        padding-bottom: 10px;
+    }*/
+    .menu{
+        width: 100% !important;
+        text-align: center !important;
+
+       
+    }
+    .m1 li:hover{
+        background-color:rgb(224, 223, 223) !important;
+        width:100% !important;
+    }
+    .noidung{
+        flex-direction: column;
+        width: 100% !important;
+        margin-left: 30px;
+    }
+    .timkiem{
+        width: 100% !important;
+    }
+    .content{
+        width: 100% !important;
+        text-align: center;
+    }
+    .anh{
+        width: 40% !important;
+    }
+}
+.bocuc{
+    width: 100%;
+}
+.header{
+    background-color: rgb(89, 81, 211);
+    color: white;
+    width: 99,3%;
+    height: 67px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-inline-start: 10px;
+}
+.menu {
+    background-color: rgb(70, 73, 252);
+    width: 100%;
+    text-align: right;
+    margin-top: -15px;  
+}
+ul{
+    padding-inline-start: 1px;
+    
+}
+.mn li{
+    display: inline-block;  
+    
+    width: 300px;
+    height: 50px; 
+    text-align: center;
+    position: relative;
+    line-height: 50px;
+    
+    
+}
+li:hover{
+    background-color:dodgerblue;    
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    
+ }
+.m1{ 
+    background-color:lavender;
+    position: absolute; 
+    width: 100%;
+    display: none;
+ 
+}
+ li:hover .m1{
+    display: block;  
+}
+.m1 li:hover{
+    background-color: darkorange;
+    width: 100%;
+    margin-left: 0px;
+}
+.m1 a{
+    color: black; 
+}
+.noidung{
+    width: 100%;
+    display: flex;
+}
+.timkiem{
+    width: 25%;
+}
+
+.content{
+   width: 75%;
+   text-align: center;
+   margin-top: 20px;
+
+}
+.anh{
+    width: 20%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+    margin:10px;
+}
+.anh p{
+    text-align: left;
+    margin-left: 10px;
+}
+img{
+    width: 90%;
+}
+.footer{
+    background-color:deepskyblue ;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 12%; 
+    bottom: 0;
+}
+    </style>
+</body>
+</html>

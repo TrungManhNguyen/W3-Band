@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function tach(){
+        var list=document.getElementById('nhap').value;
+        var select=document.getElementById("chon");
+        var tach=list.split(',');
+        var leng=tach.length;
+        if(list!='')
+        {
+            for(var i=1;i<=leng;i++)
+            {
+                var tach=list.split(',',i);
+                var option=document.createElement('option');
+                option.value=i;
+                option.innerHTML=tach.slice(-1);
+                select.appendChild(option);
+            }
+        }
+        else{
+            alert('Yêu cầu nhập nội dung');
+            document.getElementById('nhap').focus();
+        }
+    }
+    function huyL(){
+        document.getElementById('nhap').value='';
+    }
+</script>
+<body>
+    <form action="">
+        <label>Chuỗi</label>
+        <input type="text" name="nhap" id="nhap" >
+        <br>
+        <br>
+        <label>Danh sách</label>
+        <select  name="select" id="chon" ></select>
+        <br>
+        <br>
+        <input onclick="tach()" type="button" name="thuchien" id="thuchien" value="Thực hiện">
+        <input onclick="huyL() "type='button' name="huy" id="huy" value="Hủy"> 
+    </form>
+</body>
+<style>
+    body{
+        line-height: 25px;
+    }
+    form{
+        width: 400px;
+        border: solid 1px black;
+        margin: 20px;
+    }
+    select{
+        width: 100px;
+    }
+    label{
+        margin-right: 20px;
+    }
+    #nhap{
+        margin-left: 30px;
+    }
+    #thuchien{
+        margin-left: 90px;
+    }
+    #huy{
+        margin-left: 50px;
+    }
+    
+</style>
+</html>
